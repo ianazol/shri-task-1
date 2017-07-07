@@ -8,15 +8,16 @@ const gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sourcemaps = require('gulp-sourcemaps'),
     gulpIf = require('gulp-if'),
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    retinize = require('gulp-retinize');
 
 const path = {
     build: {
-        css: 'build/css/',
+        css: 'build/css/'
     },
     src: {
         html: '*.html',
-        css: 'src/css/main.scss',
+        css: 'src/css/main.scss'
     },
     watch: {
         html: '*.html',

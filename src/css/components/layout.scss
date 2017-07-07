@@ -1,16 +1,31 @@
 body,
-html
-{
+html {
   margin: 0;
   padding: 0
 }
 
 body {
+  display: flex;
+  flex-flow: column;
+
+  min-height: 100vh;
+
   background: #eee;
+  color: #000;
   font-family: Arial, sans-serif;
 }
 
 html {
   font-size: 100%;
   line-height: 1.5;
+
+  @media (min-width: 1300px) {
+    & {
+      font-size: 110%;
+    }
+  }
+}
+
+.main {
+  flex: 1;
 }
