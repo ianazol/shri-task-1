@@ -23,15 +23,19 @@ var Modal = {
         modalContainer.innerHTML = content;
         this.modal.classList.add("modal_opened");
     },
-    close: function(event) {
-        event.preventDefault();
+    close: function() {
         this.modal.classList.remove("modal_opened");
+    },
+    clickHandler: function(event) {
+        event.preventDefault();
+
+        if (! event.target.classList.contains("modal__content-img")) {
+            this.close();
+        }
     },
     init: function() {
         this.modal = document.querySelector(".modal");
-        var closeBtn = this.modal.querySelector(".modal__close-btn");
-
-        closeBtn.addEventListener('click', this.close.bind(this));
+        this.modal.addEventListener('click', this.clickHandler.bind(this));
     }
 };
 
