@@ -7,6 +7,8 @@
     flex: 1 1 auto;
     margin: 5px;
 
+    text-decoration: none;
+
     @media (min-width: 600px) {
       & {
         flex-basis: 250px;
