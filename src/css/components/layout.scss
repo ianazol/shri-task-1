@@ -1,14 +1,12 @@
 body,
 html {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 body {
+  /* fix IE bug with flexbox and min-height */
   display: flex;
-  flex-flow: column;
-
-  min-height: 100vh;
 
   background: #eee;
   color: #000;
@@ -26,6 +24,14 @@ html {
   }
 }
 
+.page {
+  display: flex;
+  flex-flow: column;
+
+  width: 100%;
+  min-height: 100vh;
+}
+
 .main {
-  flex: 1;
+  flex: 1 1 auto;
 }
