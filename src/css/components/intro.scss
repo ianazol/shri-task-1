@@ -1,11 +1,12 @@
 .intro {
-  max-width: 780px;
+  max-width: 45rem;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 20px;
 
   text-align: center;
 
   &__title {
+    margin: 0.5em 0;
     font-size: 2rem;
     line-height: 1.4em;
 
