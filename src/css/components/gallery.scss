@@ -4,18 +4,8 @@
   padding: 0 15px;
 
   &__item {
-    position: relative;
-
     flex: 1 1 auto;
-    height: 240px;
     margin: 5px;
-
-    opacity: 1;
-    transition: opacity 0.3s;
-
-    &:hover {
-      opacity: 0.8;
-    }
 
     @media (min-width: 600px) {
       & {
@@ -30,26 +20,5 @@
     &:nth-child(7n+4) {
       flex-basis: 460px;
     }
-  }
-
-  &__item-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  &__item-name {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    display: block;
-    width: 100%;
-    padding: 5px 10px;
-    box-sizing: border-box;
-
-    color: #fff;
-
-    background: #333;
   }
 }
